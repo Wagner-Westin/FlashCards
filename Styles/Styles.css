@@ -1,8 +1,11 @@
-body{
-    background-color: ligthblue;
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
-h1{
-    background-color: #ffcc00;
-}p{
-    background-color: rgb(255, 99, 71);
+.flash{
+    animation: flash 1s infinite;
 }
